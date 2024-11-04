@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holux | Real Estate Website</title>
+
+  <style>
+    body, html {
+      margin: 0; padding: 0; font-family: Arial, sans-serif;
+    }
+    nav {
+      display: flex; justify-content: space-between; padding: 20px; background-color: black; color: white;
+      padding-top: 40px;
+    }
+    nav a { color: white; text-decoration: none; margin-right: 15px; }
+    nav .nav__btns button {
+      padding: 10px 15px; margin-right: 10px; border: none; cursor: pointer;
+    }
+    .btn__primary { background-color: #007bff; color: white; }
+    .btn__secondary { background-color: #f8f9fa; color: black; }
+    header {
+      display: flex; justify-content: space-between; padding: 40px; background-color: #f1f1f1; align-items: center;
+    }
+    header img { max-width: 40%; }
+    header h1 { font-size: 32px; margin-bottom: 20px; }
+    section { padding: 60px 20px; }
+    .about__container, .project__container, .contact__container {
+      display: flex; align-items: center; gap: 30px;
+    }
+    .about__content h2, .section__header {
+      font-size: 28px;
+    }
+    .about__grid { display: flex; gap: 20px; }
+    .about__card {
+      flex: 1; background: #f8f9fa; padding: 20px; text-align: center; border: 1px solid #ddd;
+    }
+    .project__card {
+      display: flex; flex-direction: column; background-color: white; padding: 20px; border: 1px solid #ddd;
+      align-items: center;
+      padding: 50px;
+    }
+    .project__ratings { display: flex; justify-content: space-between; width: 100%; margin-top: 10px; }
+    footer { background-color: black; color: white; padding: 30px; text-align: center; }
+    form { display: flex; flex-direction: column; gap: 15px; }
+    form input, textarea {
+      width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;
+    }
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      .about__container, .project__container, .contact__container {
+        flex-direction: column;
+      }
+    }
+    h3{
+        color: blue;
+        font-size:30px;
+    }
+    #h5{
+        color: white;
+    }
+    #h7{
+        color: blue;
+        font-size: 30px;
+    }
+    .nextpage-button{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e61ae3;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .nextpage-button:hover {
+            background-color: #f71111;
+        }
+        .booknow-button{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0015fc;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .booknow-button:hover{
+            background-color: #218838;
+        }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div><a href="#">HOLUX</a></div>
+    <div>
+      <center>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#project">PROJECT</a>
+      <a href="#contact">CONTACT</a>
+      </center>
+    </div>
+    <div class="nav__btns">
+      <a href="Login,Signup.html">
+      <button class="btn__primary">Log In</button>
+      <button class="btn__secondary">Sign Up</button>
+      </a>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div>
+      <h1>A Home Built With Love and Dreams</h1>
+      <p>
+        Discover homes, apartments, and commercial properties with expert tips and market insights to help you make the best real estate decisions.
+      </p>
+      <a href="Enquirypage.html" class="booknow-button">Book Now</a>
+    </div>
+    <img src="Images/header.png" alt="header image" />
+  </header>
+
+  <section id="about">
+    <div class="about__container">
+      <img src="Images/about.jpg" alt="about" />
+      <div class="about__content">
+        <h3><strong>ABOUT US</strong></h3>
+        <h2>Award-Winning Real Estate Company in Dubai</h2>
+        <p>
+          Whether you're a first-time homebuyer or seasoned investor, we are here to guide you.
+        </p>
+        <div class="about__grid">
+          <div class="about__card">
+            <h4>PREVIOUS PROJECTS</h4>
+            <p>34+</p>
+          </div>
+          <div class="about__card">
+            <h4>YEARS EXPERIENCE</h4>
+            <p>20+</p>
+          </div>
+          <div class="about__card">
+            <h4>ONGOING PROJECTS</h4>
+            <p>12</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<center>
+  <section id="project">
+    <h2 class="section__header" id="h7" >Ongoing Projects</h2>
+    <div class="project__container">
+      <div class="project__card">
+        <img src="Images/project-1.jpg" alt="project 1" />
+        <h4>Palm View Apartments</h4>
+        <p>Palm Jumeirah, Dubai</p>
+        <a href="Enquirypage.html" class="booknow-button">Book Now</a>
+        <div class="project__ratings">
+          <div>★★★★☆</div>
+          <div>$1200</div>
+        </div>
+      </div>
+
+      <div class="project__card">
+        <img src="Images/project-2.jpg" alt="project 2" />
+        <h4>Cityscape Residences</h4>
+        <p>Downtown, Dubai</p>
+        <a href="Enquirypage.html" class="booknow-button">Book Now</a>
+        <div class="project__ratings">
+          <div>★★★★★</div>
+          <div>$1500</div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="project__container">
+        <div class="project__card">
+          <img src="Images/project-3.jpg" alt="project 3" />
+          <h4>Palm View Apartments</h4>
+          <p>Al Nahda, Dubai</p>
+          <a href="Enquirypage.html" class="booknow-button">Book Now</a>
+          <div class="project__ratings">
+            <div>★★★★</div>
+            <div>$1400</div>
+          </div>
+        </div>
+  
+        <div class="project__card">
+          <img src="Images/project-4.jpg" alt="project 4" />
+          <h4>Hyatt Place</h4>
+          <p>Deira, Dubai</p>
+          <a href="Enquirypage.html" class="booknow-button">Book Now</a>
+          <div class="project__ratings">
+            <div>★★★★☆</div>
+            <div>$2000</div>
+          </div>
+        </div>
+      </div>
+  </section>
+</center>
+
+  <center>
+  <a href="Page1.html" class="nextpage-button">Click here to view some more projects of us... </a>
+  </center>
+
+  <section id="contact">
+    <div class="contact__container">
+      <img src="Images/contact.jpg" alt="contact" />
+      <div>
+        <h2 id="h7">Contact Us</h2>
+        <p>Let's embark on this exciting journey together.</p>
+        <form>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email Address" />
+          <input type="tel" placeholder="Phone Number" />
+          <textarea placeholder="Message"></textarea>
+          <center>
+          <button type="submit">Submit</button>
+          </center>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h4>HOLUX</h4>
+        <p>
+          Our team of seasoned professionals is committed to providing you
+          with exceptional service, in-depth market knowledge, and
+          personalized solutions tailored to your unique needs.
+        </p>
+        <div class="footer__socials">
+          <span>
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </span>
+        </div>
+      </div>
+    
+      <div class="footer__col">
+        <h4>Resources</h4>
+        <a href="#" id="h5">Terms</a>
+        <a href="#" id="h5">Conditions</a>
+        <a href="#" id="h5">Policy</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="#" id="h5">
+          <span><i class="ri-mail-line"></i></span> holux@gmail.com
+        </a>
+        <a href="#" id="h5">
+          <span><i class="ri-phone-line"></i></span> 
+          <br>
+          +91 6264422620
+        </a>
+      </div>
+    </div>
+    <div class="footer__bar">
+    <br>
+      Copyright © 2024. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
